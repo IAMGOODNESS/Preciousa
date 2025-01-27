@@ -5,31 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-Commerce Navbar</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar">
+  <nav id="navbar">
     <marquee behavior="scroll" direction="rtl">for contact: <a href="tel:08107399912">08107399912</a></marquee>
     <div class="navbar-container">
       <a href="#" class="logo">Preciousa Treasures and Trend</a>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="#">Shop</a></li>
-        <span>Categories</span>
-        <select name="categories" id="categories" onchange="handleCategoryChange(this.value)"> 
-          <option value="shoes.html">Shoes</option>
-          <option value="Clothes.html">Clothes</option>
-          <option value="Bags.html">Bags</option>
-          <option value="Facials.html">Facials</option>
-          <option value="Accessories.html">Accessories</option>
-          <option value="Children.html">Children</option>
-          <option value="School.html">School</option>
-          <option value="Fashion.html">Fashion</option>
-        </select>
+        <li><a href="#testimonials">Testimonials</a></li>
+      
         
-        <li><a href="">About Us</a></li>
+        <li><a href="about.html">About Us</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
       <div class="nav-icons"></div>
@@ -39,60 +27,63 @@
   <section id="bg">
     <h3 class="welcome">Where Passion Meets Quality...</h3>
     <button class="shopnow">Product Gallery</button>
+    <button id="top"><a href="#navbar">^</a></button>
     <div class="black">
       <h2>Welcome to Preciousa</h2>
       <h3>Welcome to Preciousa Treasures and Trends where passion meets quality. Our products include clothing, shoes, bags, creams, school items, and much more. Reach out to us to get the best of your needs.</h3>
       <button class="readmore">Read more</button>
+     ^
     </div>
   </section>
 
-  <div class="who-are-we">
+  <div id="who-are-we">
     <h1>Explore Our Offers</h1>
+    <h3>Our Offers range from  Clothings </h3>
     <div class="card-container">
       <div class="card">
-        <img src="/Screenshot_20250121-105227.jpg" alt="High-Quality Clothing">
+        <img src="Screenshot_20250121-105227.jpg" alt="High-Quality Clothing">
         <h3>High-Quality Clothing</h3>
         <p>Discover premium clothing that blends style with comfort.</p>
       </div>
       <div class="card">
-        <img src="/Screenshot_20250121-103537.jpg" alt="Fashionable Accessories">
+        <img src="Screenshot_20250121-103537.jpg" alt="Fashionable Accessories">
         <h3>Fashionable Accessories</h3>
         <p>Upgrade your look with our chic and trendy accessories.</p>
       </div>
       <div class="card">
-        <img src="/Screenshot_20250121-091433.jpg" alt="Children's Essentials">
+        <img src="Screenshot_20250121-091433.jpg" alt="Children's Essentials">
         <h3>Children's Essentials</h3>
         <p>Quality items for your little ones, from clothing to toys.</p>
       </div>
       <div class="card">
-        <img src="/IMG-20250121-WA0042.jpg" alt="Elegant Bags">
+        <img src="IMG-20250121-WA0042.jpg" alt="Elegant Bags">
         <h3>Elegant Bags</h3>
         <p>Stylish bags that combine functionality with elegance.</p>
       </div>
       <div class="card">
-        <img src="/IMG-20250121-WA0042.jpg" alt="Elegant Bags">
+        <img src="IMG-20250121-WA0042.jpg" alt="Elegant Bags">
         <h3>Elegant Bags</h3>
         <p>Stylish bags that combine functionality with elegance.</p>
 
     </div>
     <div class="card">
-      <img src="/Screenshot_20250121-103110.jpg" alt="Elegant Bags">
+      <img src="Screenshot_20250121-103110.jpg" alt="Elegant Bags">
       <h3>Elegant Bags</h3>
       <p>Stylish bags that combine functionality with elegance.</p>
     </div>
     <div class="card">
-      <img src="/Screenshot_20250121-091117.jpg" alt="Elegant Bags">
+      <img src="Screenshot_20250121-091117.jpg" alt="Elegant Bags">
       <h3>Elegant Bags</h3>
       <p>Stylish bags that combine functionality with elegance.</p>
     </div>
     <div class="card">
-      <img src="/IMG-20250121-WA0104.jpg" alt="Elegant Bags">
+      <img src="IMG-20250121-WA0104.jpg" alt="Elegant Bags">
       <h3>Elegant Bags</h3>
       <p>Stylish bags that combine functionality with elegance.</p>
     </div>
     </div>
   </div>
-  <div class="testimonials">
+  <div id="testimonials">
     <h2 style="color: orange;">What Our Customers Say</h2>
     <div class="testimonial-slider">
       <div class="slide active">
