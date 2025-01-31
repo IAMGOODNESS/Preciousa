@@ -93,7 +93,7 @@ section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("DALL·E\ 2025-01-22\ 14.32.25\ -\ A\ realistic\ e-commerce\ background\ image\ with\ an\ orange\ and\ black\ theme.\ The\ scene\ depicts\ a\ modern\ shopping\ environment\ with\ a\ close-up\ view\ of\ items\ .webp"); /* Replace with your background image */
   width: 100%;
-  height: 120vh;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -148,90 +148,7 @@ section {
 }
 
 /* Responsive Styling */
-@media (max-width: 768px) {
-  .navbar-container {
-      flex-direction: column;
-      align-items: flex-start;
-  }
 
-  .nav-links {
-      flex-direction: column;
-      gap: 0.5rem;
-      right: 0;
-      top: 10px;
-  }
-
-  #sl {
-      width: 100%;
-  }
-
-  marquee {
-      left: 0;
-      text-align: center;
-  }
-
-  .welcome {
-      font-size: 24px;
-      left: 5%;
-      text-align: center;
-  }
-
-  .shopnow {
-      font-size: 20px;
-      left: 30%;
-      margin-top: 20px;
-  }
-
-  .black {
-      width: 90%;
-      margin: 0 auto;
-      left: 0;
-      top: 20px;
-  }
-
-  section {
-      background-size: cover;
-      height: 100vh;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar {
-      height: auto;
-      padding: 1rem;
-  }
-
-  .logo {
-      font-size: 1rem;
-      top: 0;
-  }
-
-  .nav-links {
-      align-items: center;
-      text-align: center;
-  }
-
-  .welcome {
-      font-size: 18px;
-      left: 0;
-      padding: 0 10px;
-  }
-
-  .shopnow {
-      font-size: 16px;
-      width: 80%;
-      left: 10%;
-  }
-
-  .black {
-      font-size: 12px;
-  }
-
-  .readmore {
-      font-size: 14px;
-      width: 80%;
-  }
-}
 marquee {
   width: 100%;
   background-color: #444;
@@ -266,8 +183,8 @@ body {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
   margin-top: 2rem;
 }
 
@@ -298,8 +215,36 @@ body {
 }
 
 @media (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+
+  }
+ 
   .card-container {
     grid-template-columns: 1fr;
+  }
+  .wel{
+    position: relative;
+    right: 140px;
+  }
+  .shopn{
+    position: relative;
+    right: 80px;
+  }
+  .black{
+    display: none;
+  }
+  .nav-links{
+    display: none;
+  }
+  .logo{
+    position: relative;
+    font-size: 14px;
+    right: 20px;
+  }
+  marquee{
+    position: relative;
+    right: 70px;
   }
 }
    /* Testimonials Section */
@@ -359,4 +304,49 @@ body {
  z-index: 1;
  text-decoration: none;
  list-style: none;
+}
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .black {
+    display: none;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .shopnow {
+    font-size: 20px;
+  }
+
+  .welcome {
+    font-size: 25px;
+    text-align: center;
+  }
 }

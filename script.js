@@ -29,3 +29,6 @@ function handleCategoryChange(value) {
     window.location.href = value; // Redirect to the selected page
   }
 }
+function toggleMenu() {
+  document.querySelector(".nav-links").classList.toggle("active");
+}
