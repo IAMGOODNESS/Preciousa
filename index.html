@@ -1,88 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Commerce Navbar</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preciousa Treasures and Trend</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for social icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- Navbar -->
   <nav id="navbar">
-    <marquee behavior="scroll" direction="rtl">for contact: <a href="tel:08107399912">08107399912</a></marquee>
+    <marquee behavior="scroll" direction="rtl">
+      For contact: <a href="tel:08107399912">08107399912</a>
+    </marquee>
     <div class="navbar-container">
       <a href="#" class="logo">Preciousa Treasures and Trend</a>
+      <!-- Mobile Menu Toggle -->
+      <div class="menu-toggle" id="mobile-menu">
+         <span class="bar"></span>
+         <span class="bar"></span>
+         <span class="bar"></span>
+      </div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="#">Shop</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
-      
-        
         <li><a href="#who-are-we">About Us</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#contact-form">Contact</a></li>
       </ul>
-      <div class="nav-icons"></div>
     </div>
   </nav>
 
-  <section id="bg">
-    <h3 class="welcome">Where Passion Meets Quality...</h3>
-    <button class="shopnow">Product Gallery</button>
-    <button id="top"><a href="#navbar">^</a></button>
-    <div class="black">
-      <h2>Welcome to Preciousa</h2>
-      <h3>Welcome to Preciousa Treasures and Trends where passion meets quality. Our products include clothing, shoes, bags, creams, school items, and much more. Reach out to us to get the best of your needs.</h3>
-      <button class="readmore">Read more</button>
-     ^
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Where Passion Meets Quality...</h1>
+        
+        <div class="hero-buttons">
+          <a href="#who-are-we" class="btn shopnow">Product Gallery</a>
+          <a href="#contact-form" class="btn readmore">Send a Message</a>
+        </div>
+      </div>
     </div>
+    <a id="top" href="#navbar">^</a>
   </section>
 
+  <!-- Offers Section -->
   <div id="who-are-we">
     <h1>Explore Our Offers</h1>
-    <h3>Our Offers range from  Clothings </h3>
+    <h3>Our offers range from Clothing to Accessories</h3>
     <div class="card-container">
       <div class="card">
-        <img src="Screenshot_20250121-105227.jpg" alt="High-Quality Clothing">
+        <img src="Screenshot_20250121-105227.jpg" alt="High-Quality Clothing" />
         <h3>High-Quality Clothing</h3>
         <p>Discover premium clothing that blends style with comfort.</p>
       </div>
       <div class="card">
-        <img src="Screenshot_20250121-103537.jpg" alt="Fashionable Accessories">
+        <img src="Screenshot_20250121-103537.jpg" alt="Fashionable Accessories" />
         <h3>Fashionable Accessories</h3>
         <p>Upgrade your look with our chic and trendy accessories.</p>
       </div>
       <div class="card">
-        <img src="Screenshot_20250121-091433.jpg" alt="Children's Essentials">
+        <img src="Screenshot_20250121-091433.jpg" alt="Children's Essentials" />
         <h3>Children's Essentials</h3>
         <p>Quality items for your little ones, from clothing to toys.</p>
       </div>
       <div class="card">
-        <img src="IMG-20250121-WA0042.jpg" alt="Elegant Bags">
+        <img src="IMG-20250121-WA0042.jpg" alt="Elegant Bags" />
         <h3>Elegant Bags</h3>
         <p>Stylish bags that combine functionality with elegance.</p>
       </div>
       <div class="card">
-        <img src="IMG-20250121-WA0042.jpg" alt="Elegant Bags">
+        <img src="IMG-20250121-WA0042.jpg" alt="Elegant Bags" />
         <h3>Elegant Bags</h3>
         <p>Stylish bags that combine functionality with elegance.</p>
-
-    </div>
-    <div class="card">
-      <img src="Screenshot_20250121-103110.jpg" alt="Elegant Bags">
-      <h3>Elegant Bags</h3>
-      <p>Stylish bags that combine functionality with elegance.</p>
-    </div>
-    <div class="card">
-      <img src="Screenshot_20250121-091117.jpg" alt="Elegant Bags">
-      <h3>Elegant Bags</h3>
-      <p>Stylish bags that combine functionality with elegance.</p>
-    </div>
-    <div class="card">
-      <img src="IMG-20250121-WA0104.jpg" alt="Elegant Bags">
-      <h3>Elegant Bags</h3>
-      <p>Stylish bags that combine functionality with elegance.</p>
-    </div>
+      </div>
+      <div class="card">
+        <img src="Screenshot_20250121-103110.jpg" alt="Elegant Bags" />
+        <h3>Elegant Bags</h3>
+        <p>Stylish bags that combine functionality with elegance.</p>
+      </div>
+      <div class="card">
+        <img src="Screenshot_20250121-091117.jpg" alt="Elegant Bags" />
+        <h3>Elegant Bags</h3>
+        <p>Stylish bags that combine functionality with elegance.</p>
+      </div>
+      <div class="card">
+        <img src="IMG-20250121-WA0104.jpg" alt="Elegant Bags" />
+        <h3>Elegant Bags</h3>
+        <p>Stylish bags that combine functionality with elegance.</p>
+      </div>
     </div>
   </div>
+
+  <!-- Testimonials Section -->
   <div id="testimonials">
     <h2 style="color: orange;">What Our Customers Say</h2>
     <div class="testimonial-slider">
@@ -91,7 +104,7 @@
         <h4>- Jane Doe</h4>
       </div>
       <div class="slide">
-        <p>"Preciousa Treasures is my go-to store for all my fashion needs."</p>
+        <p>"Preciousa Treasures is my go‑to store for all my fashion needs."</p>
         <h4>- John Smith</h4>
       </div>
       <div class="slide">
@@ -99,37 +112,78 @@
         <h4>- Mary Johnson</h4>
       </div>
       <div class="slide">
-        <p>"Fast delivery and excellent customer support. Will shop again ok!"</p>
-        <h4>- Mary Johnson</h4>
+        <p>"Exceptional quality and variety. My favorite shopping destination!"</p>
+        <h4>- Alex Brown</h4>
       </div>
     </div>
-    <div   class="slider-controls">
-      <button  style="background-color:orange ;"class="prev">&#10094;</button>
-      <button  class="next">&#10095;</button>
+    <div class="slider-controls">
+      <button class="prev" style="background-color: orange;">&#10094;</button>
+      <button class="next">&#10095;</button>
     </div>
   </div>
-  <div class="contact-form">
-    <h2 >Contact Us</h2>
-    <form id="contact-form">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <textarea id="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-    
-   
-    
 
-</div>
-<div class="cl">
-<h1>Call Us</h1>
-<img src="/R.png" alt="" height="30px">
-: <a href="tel:08107399912">08107399912</a> <br> <br> <br> 
-<img src="/OIP (1).jpg" alt="" height="30px" style="position: relative; top: 7px;"> 
-: <a href="mailto:nwanneprecous57@gmail.com">nwanneprecous57@gmail.com</a> <br> <br> <br> 
-<img src="/OIP.jpg" alt="" height="30px" style="position: relative; top: 7px;"> 
-: <a href="mailto:nwanneprecous57@gmail.com">Lugbe,Abuja</a>
-</div>
- <script src="script.js"></script>
+  <!-- Contact Form Section -->
+  <div id="contact-form">
+    <h2>Contact Us</h2>
+    <form action="/contact" method="post">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <!-- Call Us Section -->
+  <div class="cl">
+    <h1>Call Us</h1>
+    <p>
+      <img src="/R.png" alt="Call" height="30px" /> : 
+      <a href="tel:08107399912">08107399912</a>
+    </p>
+    <p>
+      <img src="/OIP (1).jpg" alt="Email" height="30px" style="vertical-align: middle;" /> : 
+      <a href="mailto:nwanneprecous57@gmail.com">nwanneprecous57@gmail.com</a>
+    </p>
+    <p>
+      <img src="/OIP.jpg" alt="Location" height="30px" style="vertical-align: middle;" /> : Lugbe, Abuja
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2>Preciousa Treasures and Trend</h2>
+        <p>Your trusted destination for fashion and accessories.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#who-are-we">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#contact-form">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:nwanneprecous57@gmail.com">nwanneprecous57@gmail.com</a></p>
+        <p>Phone: <a href="tel:08107399912">08107399912</a></p>
+        <p>Location: Lugbe, Abuja</p>
+      </div>
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Preciousa Treasures and Trend | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-  </html>
+</html>
