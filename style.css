@@ -71,11 +71,11 @@ marquee {
   font-size: 0.9rem;
 }
 
-/* Hero Section */
+/* Hero Section - Shorter Version */
 #hero {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 70vh;  /* Reduced from 100vh to 70vh */
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
     url("/DALL·E 2025-01-22 14.32.25 - A realistic e-commerce background image with an orange and black theme. The scene depicts a modern shopping environment with a close-up view of items .webp")
     no-repeat center center/cover;
@@ -355,6 +355,7 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
+  
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
