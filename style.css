@@ -389,4 +389,7 @@ footer {
   .card img {
     height: 150px;
   }
+  #hero{
+    height: 40vh;
+  }
 }
