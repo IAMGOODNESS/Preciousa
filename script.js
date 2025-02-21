@@ -32,3 +32,19 @@ function handleCategoryChange(value) {
 function toggleMenu() {
   document.querySelector(".nav-links").classList.toggle("active");
 }
+emailjs.init("1H0brlG2ArnKD_6wZ"); // Replace with your actual EmailJS public key
+
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    emailjs.send("service_2aqi526", "template_v9ih2dr", {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value
+    }).then(function(response) {
+        document.getElementById("status").innerHTML = "Message sent successfully!";
+        document.getElementById("contact-form").reset();
+    }, function(error) {
+        document.getElementById("status").innerHTML = "Failed to send message. Try again!";
+    });
+});

@@ -93,7 +93,7 @@ section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("DALL·E\ 2025-01-22\ 14.32.25\ -\ A\ realistic\ e-commerce\ background\ image\ with\ an\ orange\ and\ black\ theme.\ The\ scene\ depicts\ a\ modern\ shopping\ environment\ with\ a\ close-up\ view\ of\ items\ .webp"); /* Replace with your background image */
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -148,7 +148,90 @@ section {
 }
 
 /* Responsive Styling */
+@media (max-width: 768px) {
+  .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
 
+  .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+      right: 0;
+      top: 10px;
+  }
+
+  #sl {
+      width: 100%;
+  }
+
+  marquee {
+      left: 0;
+      text-align: center;
+  }
+
+  .welcome {
+      font-size: 24px;
+      left: 5%;
+      text-align: center;
+  }
+
+  .shopnow {
+      font-size: 20px;
+      left: 30%;
+      margin-top: 20px;
+  }
+
+  .black {
+      width: 90%;
+      margin: 0 auto;
+      left: 0;
+      top: 20px;
+  }
+
+  section {
+      background-size: cover;
+      height: 100vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+      height: auto;
+      padding: 1rem;
+  }
+
+  .logo {
+      font-size: 1rem;
+      top: 0;
+  }
+
+  .nav-links {
+      align-items: center;
+      text-align: center;
+  }
+
+  .welcome {
+      font-size: 18px;
+      left: 0;
+      padding: 0 10px;
+  }
+
+  .shopnow {
+      font-size: 16px;
+      width: 80%;
+      left: 10%;
+  }
+
+  .black {
+      font-size: 12px;
+  }
+
+  .readmore {
+      font-size: 14px;
+      width: 80%;
+  }
+}
 marquee {
   width: 100%;
   background-color: #444;
@@ -183,8 +266,8 @@ body {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
   margin-top: 2rem;
 }
 
@@ -215,36 +298,8 @@ body {
 }
 
 @media (max-width: 768px) {
-  body{
-    overflow-x: hidden;
-
-  }
- 
   .card-container {
     grid-template-columns: 1fr;
-  }
-  .wel{
-    position: relative;
-    right: 140px;
-  }
-  .shopn{
-    position: relative;
-    right: 80px;
-  }
-  .black{
-    display: none;
-  }
-  .nav-links{
-    display: none;
-  }
-  .logo{
-    position: relative;
-    font-size: 14px;
-    right: 20px;
-  }
-  marquee{
-    position: relative;
-    right: 70px;
   }
 }
    /* Testimonials Section */
@@ -305,48 +360,49 @@ body {
  text-decoration: none;
  list-style: none;
 }
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: white;
+.contact-form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+  width: 100%;
+  position: relative;
+  left: 50px;
+  top: 5px;
+  max-width: 400px;
 }
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: #333;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .black {
-    display: none;
-  }
-
-  .card-container {
-    grid-template-columns: 1fr;
-  }
-
-  .shopnow {
-    font-size: 20px;
-  }
-
-  .welcome {
-    font-size: 25px;
-    text-align: center;
-  }
+.cl{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  position: relative; 
+  left: 700px; 
+  bottom: 270px;
+}
+.cl a{
+  color: black;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background: orange;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.contact-form button:hover {
+  background: darkorange;
+}
+#status {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
 }
